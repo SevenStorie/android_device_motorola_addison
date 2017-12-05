@@ -16,6 +16,10 @@
 
 $(call inherit-product, device/motorola/addison/full_addison.mk)
 
+
+# Inherit some common AEX stuff.
+$(call inherit-product, vendor/cos/common.mk)
+
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
@@ -32,3 +36,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=motorola/addison/addison:7.1.1/NPNS26.118-22-1/1:user/release-keys \
     PRIVATE_BUILD_DESC="addison-user 7.1.1 NPNS26.118-22-1 1 release-keys" \
     PRODUCT_NAME="Moto Z Play"
+
+#BETA
+COS_BETA := true
