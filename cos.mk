@@ -15,7 +15,7 @@
 # limitations under the License.
 
 $(call inherit-product, device/motorola/addison/full_addison.mk)
-
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common AEX stuff.
 $(call inherit-product, vendor/cos/common.mk)
